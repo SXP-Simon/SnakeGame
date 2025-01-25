@@ -15,6 +15,8 @@ body {
 #gameCanvas {
   background-color: #222;
   margin: 20px;
+  border: 2px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
 #game-info {
@@ -23,12 +25,44 @@ body {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
   color: white;
   border: none;
   cursor: pointer;
+  margin: 5px;
 }
 
-button:hover {
+#start-button {
+  background-color: #007bff;
+}
+
+#start-button:hover {
   background-color: #0056b3;
+}
+
+#pause-button {
+  background-color: #ffc107;
+}
+
+#pause-button:hover {
+  background-color: #e0a800;
+}
+
+#clear-high-score-button {
+  background-color: #dc3545;
+}
+
+#clear-high-score-button:hover {
+  background-color: #c82333;
+}
+
+#game-over-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }

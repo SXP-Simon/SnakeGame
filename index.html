@@ -9,10 +9,19 @@
 <body>
   <div class="game-container">
     <h1>Snake Game</h1>
+    <div id="instructions">
+      <p>Use arrow keys to control the snake. Eat the red food to grow!</p>
+    </div>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <div id="game-info">
-      <p id="score">Score: 0</p>
+      <p id="score">Score: 0 | High Score: 0</p>
       <button id="start-button">Start Game</button>
+      <button id="pause-button">Pause</button>
+      <button id="clear-high-score-button">Clear High Score</button>
+    </div>
+    <div id="game-over-modal" style="display: none;">
+      <p>Game Over! Do you want to play again?</p>
+      <button id="restart-button">Restart</button>
     </div>
   </div>
 
